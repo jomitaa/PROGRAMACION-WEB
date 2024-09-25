@@ -1,6 +1,5 @@
 // || Clase: 24/09/24
 /* || Nombre: Sil cruz Jose Maria
-              Martinez Quiroz Leonardo
 */
 
 
