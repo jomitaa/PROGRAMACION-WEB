@@ -1,19 +1,32 @@
+<!-- Indica que el documento es de html 5 -->
 <!DOCTYPE html>
+<!-- indica el lenguaje de la pagina web -->
 <html lang="en">
+    <!-- contener información sobre el documento, como el título, los enlaces al CSS, y otros metadatos -->
 <head>
+    <!-- Indicar al navegador el tipo de codificación que debe utilizar -->
     <meta charset="UTF-8">
+    <!--  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Este es el nombre de la pagina web -->
     <title>Calculadora</title>
+    <!-- Este sirve para vincular un archivo de estilos css -->
     <link rel="stylesheet" href="./style.css">
 </head>
+<!-- Esta es la etiqueta del cuerpo del documento -->
 <body>
-    
+    <!-- Este es un contenedpr para la calculadora -->
     <div class="calculator">
-        <input type="text" class="calculator-screen" id="display" value="" >
+        <!-- Este es un cuadro de tecto en el que el usuario interactua -->
+        <input type="text" class="calculator-screen" id="display" value="" disabled>
 
+        <!-- Este es el contenedor para los botones -->
         <div class="calculator-buttons">
+            <!-- Este es un boton el cual al darle click hace la accion de borrar / limpiar todo -->
             <button class="button" onclick="clearDisplay()">C</button>
+            <!-- Este es un boton el cual al darle click hace la accion de borrar caracter por caracter -->
             <button class="button" onclick="deleteLast()">Del</button>
+            <!-- Este es un boton el cual muestra en el input -->
             <button class="button" onclick="appendToDisplay('/')">/</button>
             <button class="button" onclick="appendToDisplay('*')">*</button>
 
@@ -30,6 +43,7 @@
             <button class="button" onclick="appendToDisplay('1')">2</button>
             <button class="button" onclick="appendToDisplay('2')">2</button>
             <button class="button" onclick="appendToDisplay('3')">3</button>
+            <!-- Este boton calcula la operacion y te muestra el resultado -->
             <button class="button esqual-button" onclick="calculateResult()">=</button>
 
             <button class="button" onclick="appendToDisplay('0')">0</button>
@@ -37,7 +51,7 @@
         </div>
     </div>
 
-
+    <!-- Es para insertar o hacer referencia a un script ejecutable dentro de un documento html -->
     <script src="./script.js"></script>
 </body>
 </html>
